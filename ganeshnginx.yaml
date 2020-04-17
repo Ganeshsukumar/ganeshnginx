@@ -24,9 +24,9 @@ kind: Service
 metadata:
   name: nginxservice2
 spec:
-  ports:
-  - port: 80
-    targetPort: 80
-  selector:
-    app: ganengnix
   type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: ganenginx
